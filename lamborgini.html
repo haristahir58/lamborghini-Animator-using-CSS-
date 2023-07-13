@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborgini Animation</title>
+    <script src="script.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    .sky img {
+        display: flex;
+        height: 100vh;
+        width: 200vw;
+        animation: skyanimate 2000s linear infinite;
+
+    }
+
+    @keyframes skyanimate {
+
+        100% {
+            transform: translatex(-500vw);
+        }
+
+    }
+
+    .land img {
+        height: 60vh;
+        width: 200vw;
+        position: absolute;
+        bottom: 13%;
+        animation: landanimate 50s linear infinite;
+    }
+
+    @keyframes landanimate {
+
+        100% {
+            transform: translatex(-500vw);
+        }
+
+    }
+
+    .road img {
+        height: 30vh;
+        width: 1800vw;
+        position: absolute;
+        bottom: 0%;
+        animation: roadanimate 1s linear infinite;
+    }
+
+    @keyframes roadanimate {
+
+        100% {
+            transform: translatex(-500vw);
+        }
+
+    }
+
+    .car img {
+        height: 120px;
+        width: 500px;
+        position: absolute;
+        bottom: 20%;
+        left: 10%;
+        animation: caranimate 0.2s linear infinite;
+    }
+
+    @keyframes caranimate {
+        0% {
+            transform: translateY(0.3%);
+        }
+
+        100% {
+            transform: translateY(-0.3%);
+        }
+
+    }
+
+    .leftwheel img {
+        height: 89px;
+        width: 89px;
+        position: absolute;
+        bottom: 125px;
+        left: 183px;
+        animation: leftanimate 0.1s linear infinite;
+
+    }
+
+    @keyframes leftanimate {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .rightwheel img {
+        height: 86px;
+        width: 86px;
+        position: absolute;
+        bottom: 125px;
+        right: 950px;
+        animation: rightanimate 0.1s linear infinite;
+    }
+
+    @keyframes rightanimate {
+
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+</style>
+
+
+<body>
+    <div class="sky">
+        <img src="/skies.jpg" alt="">
+
+        <div class="land">
+            <img src="/land.png" alt="">
+        </div>
+        <div class="road">
+            <img src="/road.JPG" alt="">
+        </div>
+        <div class="car">
+            <img src="/car.png" alt="">
+        </div>
+        <div class="leftwheel">
+            <img src="/leftwheel.png" alt="">
+        </div>
+        <div class="rightwheel">
+            <img src="/rightwheel.png" alt="">
+        </div>
+    </div>
+
+</body>
+
+
+</html>
